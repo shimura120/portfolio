@@ -62,7 +62,8 @@ select[multiple] {
 }
 
 html {
-    background-color: darkgrey;
+    background-color: #ececec;
+    color: #272727;
 }
 
 body, #wrapper {
@@ -81,18 +82,24 @@ footer {
 }
 
 .introduction {
-    background-color: gray;
     height: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    background-size: 100%;
+    background-color: #272727;
 }
 .introduction img {
     border-radius: 100%;
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
 }
 .intro_text {
     flex-direction: column;
     margin-left: 1vw;
+    color: white;
 }
 .intro_text h1, .intro_text h4 {
     font-weight: lighter;
@@ -137,7 +144,7 @@ header {
 }
 
 .top_section {
-    background-color: darkgrey;
+    background-color: #ececec;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -147,8 +154,12 @@ header {
 }
 .top_section img {
     width: 30vw;
+    height: 20vw;
     border-radius: 5%;
     margin: 5vw;
+    object-fit: cover;
+    filter: blur(2px);
+    filter: brightness(30%);
 }
 .top_content1,.top_content2,.top_content3,.top_content4 {
     position: relative;
@@ -161,19 +172,19 @@ header {
 }
 .top_content1 p {
     top: 43%;
-    left: 35%;
+    left: 40%;
 }
 .top_content2 p {
     top: 43%;
-    left: 33%;
+    left: 40%;
 }
 .top_content3 p {
     top: 43%;
-    left: 38%;
+    left: 43%;
 }
 .top_content4 p {
     top: 43%;
-    left: 40%;
+    left: 38%;
 }
 
 .content1_section {
@@ -212,4 +223,9 @@ header {
     margin-left: 10vw;
     margin-right: 10vw;
     width: 300px;
+    text-align: center;
 }
+.content3_section img {
+    width: 10vw;
+}
+
