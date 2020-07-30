@@ -1,56 +1,121 @@
-document.getElementById("flower").style.display = 'none';
-document.getElementById("machine").style.display = 'none';
-document.getElementById("music").style.display = 'none';
-document.getElementById("food").style.display = 'none';
+document.getElementById("content1").style.display = 'none';
+document.getElementById("content2").style.display = 'none';
+document.getElementById("content3").style.display = 'none';
+document.getElementById("content4").style.display = 'none';
 
 function go_top() {
     document.getElementById("top").style.display = 'flex';
-    document.getElementById("flower").style.display = 'none';
-    document.getElementById("machine").style.display = 'none';
-    document.getElementById("music").style.display = 'none';
-    document.getElementById("food").style.display = 'none';
+    document.getElementById("content1").style.display = 'none';
+    document.getElementById("content2").style.display = 'none';
+    document.getElementById("content3").style.display = 'none';
+    document.getElementById("content4").style.display = 'none';
+
+    document.getElementsByTagName("html").color = 'darkgrey'
+
+    $("#go_content1").animate({'color': '#ffffff'}, 150);
+    $("#go_content2").animate({'color': '#ffffff'}, 150);
+    $("#go_content3").animate({'color': '#ffffff'}, 150);
+    $("#go_content4").animate({'color': '#ffffff'}, 150);
 
     $('.introduction').show('slow');
     $('html, body').animate({scrollTop:-100});
+
+
 }
-function go_flower() {
+function go_content1() {
     document.getElementById("top").style.display = 'none';
-    document.getElementById("flower").style.display = 'block';
-    document.getElementById("machine").style.display = 'none';
-    document.getElementById("music").style.display = 'none';
-    document.getElementById("food").style.display = 'none';
+    document.getElementById("content1").style.display = 'block';
+    document.getElementById("content2").style.display = 'none';
+    document.getElementById("content3").style.display = 'none';
+    document.getElementById("content4").style.display = 'none';
+
+    $("#go_content1").animate({'color': '#ff943e'}, 150);
+    $("#go_content2").animate({'color': '#ffffff'}, 150);
+    $("#go_content3").animate({'color': '#ffffff'}, 150);
+    $("#go_content4").animate({'color': '#ffffff'}, 150);
 
     $('.introduction').hide('slow');
     $('html, body').animate({scrollTop:-100});
 }
-function go_machine() {
+function go_content2() {
     document.getElementById("top").style.display = 'none';
-    document.getElementById("flower").style.display = 'none';
-    document.getElementById("machine").style.display = 'block';
-    document.getElementById("music").style.display = 'none';
-    document.getElementById("food").style.display = 'none';
+    document.getElementById("content1").style.display = 'none';
+    document.getElementById("content2").style.display = 'block';
+    document.getElementById("content3").style.display = 'none';
+    document.getElementById("content4").style.display = 'none';
+
+    $("#go_content1").animate({'color': '#ffffff'}, 150);
+    $("#go_content2").animate({'color': '#ff943e'}, 150);
+    $("#go_content3").animate({'color': '#ffffff'}, 150);
+    $("#go_content4").animate({'color': '#ffffff'}, 150);
 
     $('.introduction').hide('slow');
     $('html, body').animate({scrollTop:-100});
 }
-function go_music() {
+function go_content3() {
     document.getElementById("top").style.display = 'none';
-    document.getElementById("flower").style.display = 'none';
-    document.getElementById("machine").style.display = 'none';
-    document.getElementById("music").style.display = 'block';
-    document.getElementById("food").style.display = 'none';
+    document.getElementById("content1").style.display = 'none';
+    document.getElementById("content2").style.display = 'none';
+    document.getElementById("content3").style.display = 'block';
+    document.getElementById("content4").style.display = 'none';
+
+    $("#go_content1").animate({'color': '#ffffff'}, 150);
+    $("#go_content2").animate({'color': '#ffffff'}, 150);
+    $("#go_content3").animate({'color': '#ff943e'}, 150);
+    $("#go_content4").animate({'color': '#ffffff'}, 150);
 
     $('.introduction').hide('slow');
     $('html, body').animate({scrollTop:-100});
 }
-function go_food() {
+function go_content4() {
     document.getElementById("top").style.display = 'none';
-    document.getElementById("flower").style.display = 'none';
-    document.getElementById("machine").style.display = 'none';
-    document.getElementById("music").style.display = 'none';
-    document.getElementById("food").style.display = 'block';
+    document.getElementById("content1").style.display = 'none';
+    document.getElementById("content2").style.display = 'none';
+    document.getElementById("content3").style.display = 'none';
+    document.getElementById("content4").style.display = 'block';
+
+    $("#go_content1").animate({'color': '#ffffff'}, 150);
+    $("#go_content2").animate({'color': '#ffffff'}, 150);
+    $("#go_content3").animate({'color': '#ffffff'}, 150);
+    $("#go_content4").animate({'color': '#ff943e'}, 150);
 
     $('.introduction').hide('slow');
     $('html, body').animate({scrollTop:-100});
 }
 
+$("#go_content1").hover(function(){
+    $(this).animate({'color': '#ff943e'}, 150);
+}, function() {
+    if(document.getElementById("content1").style.display == 'block') {
+        $(this).animate({'color': '#ff943e'}, 150);
+    } else {
+        $(this).animate({'color': '#ffffff'}, 150);
+    }
+})
+$("#go_content2").hover(function(){
+    $(this).animate({'color': '#ff943e'}, 150);
+}, function() {
+    if(document.getElementById("content2").style.display == 'block') {
+        $(this).animate({'color': '#ff943e'}, 150);
+    } else {
+        $(this).animate({'color': '#ffffff'}, 150);
+    }
+})
+$("#go_content3").hover(function(){
+    $(this).animate({'color': '#ff943e'}, 150);
+}, function() {
+    if(document.getElementById("content3").style.display == 'block') {
+        $(this).animate({'color': '#ff943e'}, 150);
+    } else {
+        $(this).animate({'color': '#ffffff'}, 150);
+    }
+})
+$("#go_content4").hover(function(){
+    $(this).animate({'color': '#ff943e'}, 150);
+}, function() {
+    if(document.getElementById("content4").style.display == 'block') {
+        $(this).animate({'color': '#ff943e'}, 150);
+    } else {
+        $(this).animate({'color': '#ffffff'}, 150);
+    }
+})

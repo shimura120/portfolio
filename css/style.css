@@ -62,7 +62,7 @@ select[multiple] {
 }
 
 html {
-    background-color: #fafafa;
+    background-color: darkgrey;
 }
 
 body, #wrapper {
@@ -135,6 +135,7 @@ header {
     height: 3vw;
     border-radius: 100%;
 }
+
 .top_section {
     background-color: darkgrey;
     display: flex;
@@ -142,13 +143,14 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 .top_section img {
     width: 30vw;
     border-radius: 5%;
     margin: 5vw;
 }
-.top_flower,.top_machine,.top_music,.top_food {
+.top_content1,.top_content2,.top_content3,.top_content4 {
     position: relative;
 }
 .top_section p {
@@ -157,36 +159,36 @@ header {
     position: absolute;
     font-size: 3vw;
 }
-.top_flower p {
+.top_content1 p {
     top: 43%;
     left: 35%;
 }
-.top_machine p {
+.top_content2 p {
     top: 43%;
     left: 33%;
 }
-.top_music p {
+.top_content3 p {
     top: 43%;
     left: 38%;
 }
-.top_food p {
+.top_content4 p {
     top: 43%;
     left: 40%;
 }
 
-.flower_section {
+.content1_section {
     background-color: teal;
     height: auto;
 }
-.machine_section {
+.content2_section {
     background-color: khaki;
     height: auto;
 }
-.music_section {
+.content3_section {
     background-color: salmon;
     height: auto;
 }
-.food_section {
+.content4_section {
     background-color: darkgoldenrod;
     height: auto;
 }
@@ -209,4 +211,5 @@ header {
     flex-direction: column;
     margin-left: 10vw;
     margin-right: 10vw;
+    width: 300px;
 }
